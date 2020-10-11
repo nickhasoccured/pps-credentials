@@ -1,2 +1,2 @@
-# pps-credentials
-Simple script for generating Portland Public Schools credentials
+# Credentials Generator
+A simple script for generating credentials for Portland Public Schools students
