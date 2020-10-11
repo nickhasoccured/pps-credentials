@@ -3,13 +3,21 @@
 <head>
 	<title>Credentials Generator</title>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-	<script>
-let firstName = prompt("Enter your First Name", "First Name");
-let lastName = prompt("Enter your Last Name", "Last Name");
-let studentID = prompt("Enter your Student ID", "123456");
-alert("USERNAME: " + firstName.charAt(0) + lastName + studentID.substr(2) + "\nPASSWORD: Pps" + studentID + "\nEMAIL: " + firstName.charAt(0) + lastName + studentID.substr(2) + "@student.pps.net");
-	</script>
+	<script src=script.js></script>
+	<h1>Credentials Generator</h1>
+	<p>
+	This website generates default credentials for Portland Public Schools students based on the information your provide.<br>
+	The password may be incorrect if the student has changed it from the default, or if they're <u>below</u> 6th Grade.<br>
+	Everything is processed on your machine, and the source-code is available <a href=https://github.com/nickpdx/nickpdx.github.io>here</a>.<br>
+	<strong>You should <a href=https://password.pps.net>change your student password</a> afterward!</strong><br>
+	<button onclick="generate()">Generate Credentials</button>
+	</p>
+	<p id=username><strong>USERNAME: </strong></p>
+	<p id=email><strong>EMAIL: </strong></p>
+	<p id=password><strong>PASSWORD: </strong></p>
+	<footer>© 2020 <a href=mailto:nick@nickpdx.tk>Nicholas Christopher</a>. This website is not affiliated with Portland Public Schools.</footer>
 <body>
 </html>
